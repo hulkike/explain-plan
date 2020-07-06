@@ -37,7 +37,7 @@ public class Ex2Explain {
             ex2TipoDocumento = ex2TipoDocumentoOptional.get();
         }
 
-        for (int i = 1; i < 10000; i++) {
+        for (int i = 1; i < 100000; i++) {
             Ex2Cliente ex2Cliente = new Ex2Cliente();
             ex2Cliente.setId(i);
             ex2Cliente.setNombres("Nombre"+i);

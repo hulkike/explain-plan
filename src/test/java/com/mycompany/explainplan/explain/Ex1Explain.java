@@ -40,7 +40,7 @@ public class Ex1Explain {
             ex1TipoDocumento= ex1TipoDocumentoOptional.get();
         }
 
-        for (int i = 1; i <10000 ; i++) {
+        for (int i = 1; i <100000 ; i++) {
             Ex1Cliente ex1Cliente = new Ex1Cliente();
             ex1Cliente.setEx1ClientePK(new Ex1ClientePK(ex1TipoDocumento.getSigla(),"doc"+i));
             ex1Cliente.setNombres("nombre"+i);
