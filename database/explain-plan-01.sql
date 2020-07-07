@@ -28,7 +28,7 @@ where td.nombre = 'Cedula de ciudadania'
 -- DISEÑO UNO A MUCHOS IDENTIFICABLE CON LLAVES NATURALES WHERE A CAMPO NO INDEXADO
 -- explain plan 1 query 3
 -- enlace: https://explain.depesz.com/s/qMiO
---costo: 12.01 de 100000 registros
+--costo: 12.01 de 1 registros
 explain (analyse true, costs true, timing true, buffers true, verbose true)
 select count(*)
 from ex1_tipo_documento;
@@ -62,7 +62,7 @@ from ex1_cliente c;
 -- DISEÑO UNO A MUCHOS IDENTIFICABLE CON LLAVES NATURALES WHERE A CAMPO NO INDEXADO
 -- explain plan 1 query 7
 -- enlace:
---costo: 5525.36 de 100000 registros
+--costo: 0.02 de 100000 registros
 explain (analyse true, costs true, timing true, buffers true, verbose true)
 select *
 from ex1_cliente c
