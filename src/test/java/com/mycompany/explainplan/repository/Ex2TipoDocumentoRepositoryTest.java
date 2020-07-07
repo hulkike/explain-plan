@@ -34,14 +34,14 @@ class Ex2TipoDocumentoRepositoryTest {
     @Order(2)
     void findById(){
         Ex2TipoDocumento ex2TipoDocumento = ex2TipoDocumentoRepository.findById(10).get();
-        assertEquals(ex2TipoDocumento.getSigla(),"NI");
+        assertEquals("NI", ex2TipoDocumento.getSigla());
     }
 
     @Test
     @Order(3)
     void findAll(){
         List<Ex2TipoDocumento> tipoDocumentoSet = (List<Ex2TipoDocumento>)ex2TipoDocumentoRepository.findAll();
-        System.out.println(tipoDocumentoSet);
+        assertTrue(!tipoDocumentoSet.isEmpty());
     }
 
     @Test
@@ -50,6 +50,7 @@ class Ex2TipoDocumentoRepositoryTest {
         Ex2TipoDocumento ex2TipoDocumento = ex2TipoDocumentoRepository.findById(10).get();
         ex2TipoDocumento.setSigla("NIT");
         ex2TipoDocumentoRepository.save(ex2TipoDocumento);
+        assertTrue(true);
     }
 
     @Test

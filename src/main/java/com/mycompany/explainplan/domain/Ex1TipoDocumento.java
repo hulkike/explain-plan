@@ -51,6 +51,6 @@ public class Ex1TipoDocumento {
     }
 
     public void setEx1Clientes(Collection<Ex1Cliente> ex1ClientesBySigla) {
-        this.ex1Clientes = ex1Clientes;
+        this.ex1Clientes = ex1ClientesBySigla;
     }
 }

@@ -12,10 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class Ex3Explain {
+class Ex3Explain {
     @Autowired
     Ex3ClienteRepository ex3ClienteRepository;
     @Autowired
@@ -45,7 +46,6 @@ public class Ex3Explain {
             ex3Cliente.setEx3TipoDocumentoByIdTipoDocumento(ex3TipoDocumento);
             ex3ClienteRepository.save(ex3Cliente);
         }
-
-
+        assertTrue(true);
     }
 }

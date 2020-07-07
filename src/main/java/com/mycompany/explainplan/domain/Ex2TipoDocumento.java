@@ -14,9 +14,6 @@ public class Ex2TipoDocumento {
     private String nombre;
     private Collection<Ex2Cliente> ex2ClientesById;
 
-    public Ex2TipoDocumento() {
-    }
-
     @Id
     @Column(name = "id")
     public Integer getId() {

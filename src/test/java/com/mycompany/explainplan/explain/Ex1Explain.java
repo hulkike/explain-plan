@@ -15,9 +15,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class Ex1Explain {
+class Ex1Explain {
 
     @Autowired
     Ex1TipoDocumentoRepository ex1TipoDocumentoRepository;
@@ -47,6 +49,8 @@ public class Ex1Explain {
             ex1Cliente.setApellidos("apellidos"+i);
             ex1ClienteRepository.save(ex1Cliente);
         }
+
+        assertTrue(true);
 
     }
 }

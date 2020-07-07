@@ -23,9 +23,9 @@ class Ex1TipoDocumentoRepositoryTest {
         Ex1TipoDocumento ex1TipoDocumento = new Ex1TipoDocumento();
         ex1TipoDocumento.setSigla("CC");
         ex1TipoDocumento.setNombre("Cedula de ciudadania");
-
         ex1TipoDocumentoRepository.save(ex1TipoDocumento);
 
+        assertTrue(true);
     }
 
 }
