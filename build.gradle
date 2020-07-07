@@ -42,3 +42,7 @@ sonarqube {
         property "sonar.login", "5e7241f072ae998720d407d04c33e6ede5d23edb"
     }
 }
+
+test {
+    exclude '**/*'
+}
