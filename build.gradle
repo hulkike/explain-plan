@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.3.1.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
+    id "org.sonarqube" version "2.8"
 }
 
 group = 'com.mycompany'
@@ -31,4 +32,13 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "hulkike_explain-plan"
+        property "sonar.organization", "hulkike"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", "5e7241f072ae998720d407d04c33e6ede5d23edb"
+    }
 }
