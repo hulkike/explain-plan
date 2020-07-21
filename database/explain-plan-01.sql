@@ -61,7 +61,7 @@ from ex1_cliente c;
 
 -- DISEÑO UNO A MUCHOS IDENTIFICABLE CON LLAVES NATURALES WHERE A CAMPO NO INDEXADO
 -- explain plan 1 query 7
--- enlace:
+-- enlace: https://explain.depesz.com/s/aCMQ
 --costo: 0.02
 explain (analyse true, costs true, timing true, buffers true, verbose true)
 select *
